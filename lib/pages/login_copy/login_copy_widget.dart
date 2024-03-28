@@ -69,8 +69,8 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
     _model.passwordController ??= TextEditingController();
     _model.passwordFocusNode ??= FocusNode();
 
-    _model.emailAddressCreateController1 ??= TextEditingController();
-    _model.emailAddressCreateFocusNode1 ??= FocusNode();
+    _model.emailAddressCreateController ??= TextEditingController();
+    _model.emailAddressCreateFocusNode ??= FocusNode();
 
     _model.passwordConfirmController ??= TextEditingController();
     _model.passwordConfirmFocusNode ??= FocusNode();
@@ -78,8 +78,8 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
     _model.passwordCreateController ??= TextEditingController();
     _model.passwordCreateFocusNode ??= FocusNode();
 
-    _model.emailAddressCreateController2 ??= TextEditingController();
-    _model.emailAddressCreateFocusNode2 ??= FocusNode();
+    _model.userTypeController ??= TextEditingController();
+    _model.userTypeFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
@@ -654,9 +654,9 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                                   width: double.infinity,
                                                   child: TextFormField(
                                                     controller: _model
-                                                        .emailAddressCreateController1,
+                                                        .emailAddressCreateController,
                                                     focusNode: _model
-                                                        .emailAddressCreateFocusNode1,
+                                                        .emailAddressCreateFocusNode,
                                                     autofocus: true,
                                                     autofillHints: const [
                                                       AutofillHints.name
@@ -746,7 +746,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                                                 context)
                                                             .primary,
                                                     validator: _model
-                                                        .emailAddressCreateController1Validator
+                                                        .emailAddressCreateControllerValidator
                                                         .asValidator(context),
                                                   ),
                                                 ),
@@ -1098,9 +1098,9 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                                   width: double.infinity,
                                                   child: TextFormField(
                                                     controller: _model
-                                                        .emailAddressCreateController2,
+                                                        .userTypeController,
                                                     focusNode: _model
-                                                        .emailAddressCreateFocusNode2,
+                                                        .userTypeFocusNode,
                                                     autofocus: true,
                                                     autofillHints: const [
                                                       AutofillHints.birthdayDay
@@ -1192,7 +1192,7 @@ class _LoginCopyWidgetState extends State<LoginCopyWidget>
                                                                 context)
                                                             .primary,
                                                     validator: _model
-                                                        .emailAddressCreateController2Validator
+                                                        .userTypeControllerValidator
                                                         .asValidator(context),
                                                   ),
                                                 ),

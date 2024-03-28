@@ -22,10 +22,10 @@ class LoginCopyModel extends FlutterFlowModel<LoginCopyWidget> {
   late bool passwordVisibility;
   String? Function(BuildContext, String?)? passwordControllerValidator;
   // State field(s) for emailAddress_Create widget.
-  FocusNode? emailAddressCreateFocusNode1;
-  TextEditingController? emailAddressCreateController1;
+  FocusNode? emailAddressCreateFocusNode;
+  TextEditingController? emailAddressCreateController;
   String? Function(BuildContext, String?)?
-      emailAddressCreateController1Validator;
+      emailAddressCreateControllerValidator;
   // State field(s) for passwordConfirm widget.
   FocusNode? passwordConfirmFocusNode;
   TextEditingController? passwordConfirmController;
@@ -39,11 +39,10 @@ class LoginCopyModel extends FlutterFlowModel<LoginCopyWidget> {
   // State field(s) for CheckboxGroup widget.
   List<String>? checkboxGroupValues;
   FormFieldController<List<String>>? checkboxGroupValueController;
-  // State field(s) for emailAddress_Create widget.
-  FocusNode? emailAddressCreateFocusNode2;
-  TextEditingController? emailAddressCreateController2;
-  String? Function(BuildContext, String?)?
-      emailAddressCreateController2Validator;
+  // State field(s) for UserType widget.
+  FocusNode? userTypeFocusNode;
+  TextEditingController? userTypeController;
+  String? Function(BuildContext, String?)? userTypeControllerValidator;
 
   @override
   void initState(BuildContext context) {
@@ -62,8 +61,8 @@ class LoginCopyModel extends FlutterFlowModel<LoginCopyWidget> {
     passwordFocusNode?.dispose();
     passwordController?.dispose();
 
-    emailAddressCreateFocusNode1?.dispose();
-    emailAddressCreateController1?.dispose();
+    emailAddressCreateFocusNode?.dispose();
+    emailAddressCreateController?.dispose();
 
     passwordConfirmFocusNode?.dispose();
     passwordConfirmController?.dispose();
@@ -71,7 +70,7 @@ class LoginCopyModel extends FlutterFlowModel<LoginCopyWidget> {
     passwordCreateFocusNode?.dispose();
     passwordCreateController?.dispose();
 
-    emailAddressCreateFocusNode2?.dispose();
-    emailAddressCreateController2?.dispose();
+    userTypeFocusNode?.dispose();
+    userTypeController?.dispose();
   }
 }
