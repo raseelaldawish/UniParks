@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "228561404309",
+    "project_id": "uniparks",
+    "storage_bucket": "uniparks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228561404309:android:487b0e263dd6962ca4769c",
+        "android_client_info": {
+          "package_name": "com.mycompany.uniparks"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRMjXAJM4cFiV1bpXhoAg1kpwD6CbubOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
